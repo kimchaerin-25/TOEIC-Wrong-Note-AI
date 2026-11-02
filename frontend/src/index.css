@@ -107,3 +107,23 @@ textarea.form-control {
   resize: vertical;
   min-height: 100px;
 }
+
+/* Status messages (loading / error / empty states) */
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.status-message {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--color-text-muted);
+}

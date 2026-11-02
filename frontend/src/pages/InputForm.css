@@ -62,3 +62,11 @@
         grid-template-columns: 1fr;
     }
 }
+.form-fieldset {
+    border: none;
+    min-width: 0;
+}
+
+.form-fieldset:disabled {
+    opacity: 0.7;
+}
