@@ -92,3 +92,10 @@
         justify-content: flex-end;
     }
 }
+.empty-notes {
+    text-align: center;
+}
+
+.empty-notes .status-message {
+    padding: 1rem 0;
+}
