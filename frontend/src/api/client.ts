@@ -27,6 +27,10 @@ function extractMessage(status: number, body: ApiErrorBody | null): string {
     if (Array.isArray(detail) && detail.length > 0) {
         return detail.map((d) => d.msg).join(' / ');
     }
+    if (status >= 500) {
+        // No JSON body: typically the dev proxy failing to reach a stopped backend.
+        return `Server error (${status}). The server may be unavailable — please try again shortly.`;
+    }
     return `Request failed with status ${status}`;
 }
 
