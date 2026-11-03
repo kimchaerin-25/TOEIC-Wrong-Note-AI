@@ -125,3 +125,42 @@
 .bottom-actions>* {
     flex: 1;
 }
+.translation-choices {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem 1rem;
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 640px) {
+    .translation-choices {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grammar-rule {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.category-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.example-item + .example-item {
+    margin-top: 0.75rem;
+}
+
+.confidence-reason {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.disclaimer {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
